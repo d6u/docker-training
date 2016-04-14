@@ -12,12 +12,14 @@
 
     Explain `FROM`, `ADD` and `CMD`?
 
-4. Use `docker run` to start the server
+4. Build the image, use `docker run` to start the server
+
+5. Expose a port when run `docker run` so we can see the message
 
 ## Build a Express server
 
-1. Need package.json
+1. Need `package.json`
 
 2. Build a more complex Dockerfile
 
-    Explain `RUN`
+    Explain `RUN`, `EXPOSE`
