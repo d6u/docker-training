@@ -8,6 +8,11 @@
 >
 > -- Wikipedia [https://en.wikipedia.org/wiki/LXC](https://en.wikipedia.org/wiki/LXC)
 
+Two most important concept here:
+
+1. Resource allocation (limitation and prioritization)
+2. Resource isolation (process tree, networking, file system, etc.)
+
 ## What and Who is Docker?
 
 > Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux.
@@ -18,8 +23,27 @@ Docker, Inc. is a company that sponsors Docker project. The idea of Docker was i
 
 ## What is a Docker "image"
 
-Read-only **templates** from which Docker containers are launched. Each image consists of a series of **layers** (each step in Dockerfile). Docker makes use of union file systems (some fancy term) to combine these layers into a single image.
+Read-only **templates** from which Docker containers are launched. Each image consists of a series of **layers** (each step in Dockerfile). Docker makes use of _union file systems_ to combine these layers into a single image.
+
+```
+FROM node
+
+RUN mkdir /app
+ADD index.js /app/index.js
+
+CMD ["node", "/app/index.js"]
+```
 
 ## Docker client and docker server
 
 ![](https://docs.docker.com/engine/article-img/architecture.svg)
+
+### >>Demo<<
+
+```sh
+docker run --rm -i -t daiweilu/docker-training:1-recap
+node /app/index.js
+
+# In another shell
+ps auxf
+```
