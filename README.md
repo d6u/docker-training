@@ -11,3 +11,9 @@
 9. [Use `docker-compose` to speed up development](./9-use-docker-compose-to-speed-up-development.md)
 10. [Deploy container to production](./10-deploy-container-to-production.md)
 11. [Container orchestration](./11-deploy-container-to-production.md)
+
+## Questions for Next Training
+
+- local virtual machine management -- is one enough? Resource consumption if running mysql, elasticsearch, node apps, more than one of each? Significance of name "default"
+- managing images and containers -- how to prevent them from accumulating over time
+- value in coming up with some standard practices for new node apps using Docker? (base image to use, Dockerfile template and best practices, what else)?
