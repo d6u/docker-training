@@ -5,29 +5,9 @@
 3. [`create`, `start`, `run`, `ps`](./3-create-start-run-ps.md)
 4. [`commit`, `images`](./4-commit-images.md)
 5. [Use `build` and `Dockerfile` to automate `commit`](./5-use-build-and-dockerfile-to-automate-commit.md)
-6. [Hello Node inside a docker (`--publish`)](#hello-node-inside-a-docker---publish)
-7. [Link containers together (`--link`)](#link-containers-together---link)
-8. [Share file between host and container (`--volume`)](#share-file-between-host-and-container---volume)
-9. [Use `docker-compose` to speed up development](#use-docker-compose-to-speed-up-development)
-10. [Deploy container to production](#deploy-container-to-production)
-11. [Container orchestration](#container-orchestration)
-
-## Hello Node inside a docker (`--publish`)
-
-## Link containers together (`--link`)
-
-## Share file between host and container (`--volume`)
-
-## Use `docker-compose` to speed up development
-
-## Deploy container to production
-
-1. Provision AWS Docker server using docker-machine
-2. DevOp challenges (port mapping, auto recovery, multi-host, resource management)
-
-## Container orchestration
-
-1. Concept
-2. Docker Cloud
-3. Deploy to Docker Cloud
-4. Bonus: deploy to Kubernetes
+6. [Hello Node inside a docker (`--publish`)](./6-hello-node-inside-a-docker---publish.md)
+7. [Link containers together (`--link`)](./7-link-containers-together---link.md)
+8. [Share file between host and container (`--volume`)](./8-share-file-between-host-and-container---volume.md)
+9. [Use `docker-compose` to speed up development](./9-use-docker-compose-to-speed-up-development.md)
+10. [Deploy container to production](./10-deploy-container-to-production.md)
+11. [Container orchestration](./11-deploy-container-to-production.md)
