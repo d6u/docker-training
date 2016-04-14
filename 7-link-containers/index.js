@@ -3,9 +3,10 @@
 const express = require('express');
 const Redis = require('ioredis');
 
-const redis = new Redis({
+const redis = new Redis();
+const app = express();
 
-});
+redis.on('error', console.error);
 
 redis.set('visitor_count', 0);
 
