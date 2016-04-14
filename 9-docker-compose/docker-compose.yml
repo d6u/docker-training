@@ -3,9 +3,9 @@ hello-node-service:
   links:
     - 'redis:redis'
   ports:
-    - '6900:7890'
-  volumes:
-    - ./config:/pn-minions/config
-    - ./lib:/pn-minions/lib
-    - ./script:/pn-minions/script
-    - ./_tmp:/pn-minions/_tmp
+    - '3000:3000'
+  volume:
+    - host:container
+
+redis:
+  image: redis
