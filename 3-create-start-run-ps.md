@@ -30,10 +30,17 @@
 5. `docker create` + `docker start` ~= `docker run`
 
     ```
+    docker run [OPTIONS] IMAGE  [COMMAND] [ARG...]
+    docker run           ubuntu bash
+    docker run           ubuntu ls        -al
+    docker run --rm      ubuntu node      /app/index.js
+    ```
+
+    ```
     docker run ubuntu
     ```
 
-    Exit immediately with code 0
+    Exit immediately with code 0 because it has nothing to do.
 
 6. Interact with docker container
 
@@ -46,3 +53,5 @@
     ```
     echo Hello, docker! > /hellofile
     ```
+
+7. If we remove the container, and create a new one, the file is gone. Image is immutable.

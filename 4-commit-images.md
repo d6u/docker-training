@@ -1,14 +1,14 @@
 # `commit`, `images`
 
-1. `docker commit`
+1. `docker commit` to create image from container we created in previous chapter
 
     ```
-    docker commit <container-id> daiwei/awesome:v1
+    docker commit <container-id> daiweilu/awesome:v1
     ```
 
-2. Use "image"
+2. Use the "image", our file is preserved
 
     ```
-    docker run -i -t daiwei/awesome:v1 bash
+    docker run -i -t daiweilu/awesome:v1 bash
     cat /hellofile
     ```
