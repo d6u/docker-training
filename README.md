@@ -9,8 +9,8 @@
 7. [Link containers together (`--link`)](./7-link-containers-together---link.md)
 8. [Share file between host and container (`--volume`)](./8-share-file-between-host-and-container---volume.md)
 9. [Use `docker-compose` to speed up development](./9-use-docker-compose-to-speed-up-development.md)
-10. [Deploy container to production](./10-deploy-container-to-production.md)
-11. [Container orchestration](./11-deploy-container-to-production.md)
+10. [Deploy container to AWS](./10-deploy-container-to-aws.md)
+11. [Docker Cloud](./11-docker-cloud.md)
 
 ## Questions for Next Training
 
