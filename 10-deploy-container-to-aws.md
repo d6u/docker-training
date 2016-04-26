@@ -1,22 +1,31 @@
 ## Deploy container to AWS
 
-Provision docker host to AWS using docker-machine:
+### >>Hands on<<
 
-    docker-machine create --driver amazonec2 \
+1. Provision docker host to AWS using docker-machine:
+
+```sh
+docker-machine create
+    --driver amazonec2 \
     --amazonec2-zone=b \
     --amazonec2-access-key <access-key> \
     --amazonec2-secret-key <secret-key> \
     <machine-name>
+```
 
-To run a container:
+2. To run a container:
 
-    docker-compose up
+```sh
+docker-compose up
 
-This setup is not designed for production services. 
-   
-    What happens if the container fails?
-    What if the docker host goes down?
-    How to scale from one instance to multiple?
-    How to manage IP addresses?
-    How to view logs?
-    
+# Or
+docker run
+```
+
+## This setup is not designed for production services.
+
+- What happens if the container fails?
+- What if the docker host goes down?
+- How to scale from one instance to multiple?
+- How to manage IP addresses and ports?
+- How to view logs?

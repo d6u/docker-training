@@ -1,11 +1,5 @@
-hello-node-service:
-  build: .
-  links:
-    - 'redis:redis'
-  ports:
-    - '3000:3000'
-  volume:
-    - host:container
-
 redis:
   image: redis
+
+# hello-node-service:
+#   build: .

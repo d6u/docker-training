@@ -12,8 +12,15 @@
 10. [Deploy container to AWS](./10-deploy-container-to-aws.md)
 11. [Docker Cloud](./11-docker-cloud.md)
 
+
 ## Questions for Next Training
 
 - local virtual machine management -- is one enough? Resource consumption if running mysql, elasticsearch, node apps, more than one of each? Significance of name "default"
 - managing images and containers -- how to prevent them from accumulating over time
 - value in coming up with some standard practices for new node apps using Docker? (base image to use, Dockerfile template and best practices, what else)?
+
+## Use Ngrok to share your server
+
+```sh
+ngrok http 192.168.1.1:8080
+```

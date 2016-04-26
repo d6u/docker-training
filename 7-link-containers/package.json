@@ -1,14 +1,6 @@
 {
   "name": "7-link-containers",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Daiwei Lu <daiweilu123@gmail.com> (http://daiwei.lu/)",
-  "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
     "ioredis": "^1.15.1"
