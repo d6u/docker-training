@@ -1,5 +1,9 @@
 redis:
   image: redis
 
-# hello-node-service:
-#   build: .
+hello-node-service:
+  build: .
+  links:
+    - redis:redis
+  ports:
+    - 5000:3000
